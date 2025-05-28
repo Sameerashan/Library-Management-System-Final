@@ -55,7 +55,7 @@ namespace LMS_software
             textBox3.Text = outDate.ToString("yyyy-MM-dd");
 
             int lateDays = (DateTime.Now - outDate).Days - 14;
-            int lateFee = lateDays > 0 ? lateDays * 10 : 0;
+            int lateFee = lateDays > 0 ? lateDays * 5 : 0;
             textBox4.Text = lateFee.ToString();
         }
 
